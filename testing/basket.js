@@ -7,6 +7,11 @@
     total : 0,
 
     addToBasket : function(item) {
+      // var itemObject = {
+      //   name: item,
+      //   quantity: 1
+      // };
+      // this.items.push(itemObject);
       this.items.push(item);
     },
 
@@ -18,7 +23,6 @@
     },
 
     updateItemQuantity : function() {
-
     }
   }
   exports.basket = basket;

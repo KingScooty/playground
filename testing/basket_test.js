@@ -5,6 +5,7 @@ describe("Basket", function () {
     it ("should add item to basket ", function () {
       basket.addToBasket('cake');
       expect(basket.items[0]).to.equal('cake');
+      // expect(basket.items[0].name).to.equal('cake');
     });
 
     it ("should update item quantity", function() {
