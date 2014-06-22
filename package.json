@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "description": "Experimenting with shit, innit!",
+  "main": "index.js",
+  "scripts": {
+    "test": "testing/mocha.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KingScooty/playground.git"
+  },
+  "author": "Scotty Vernon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KingScooty/playground/issues"
+  },
+  "homepage": "https://github.com/KingScooty/playground"
+}
