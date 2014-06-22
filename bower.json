@@ -1,0 +1,11 @@
+{
+  "name": "playground",
+  "version": "0.0.1",
+  "homepage": "https://github.com/KingScooty/playground",
+  "authors": [
+    "Scotty Vernon <scott.vernon@gmail.com>"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
