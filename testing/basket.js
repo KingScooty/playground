@@ -1,22 +1,26 @@
 (function (exports) {
   "use strict";
 
-  var cart = {
+  var basket = {
 
-    items : 0,
+    items : [],
     total : 0,
 
-    addToBasket : function() {
-
+    addToBasket : function(item) {
+      this.items.push(item);
     },
 
-    removeFromBasket : function() {
-
+    removeFromBasket : function(item) {
+      var index = this.items.indexOf(item);
+      if (index > -1) {
+        this.items.splice(index, 1);
+      }
     },
 
     updateItemQuantity : function() {
 
     }
   }
+  exports.basket = basket;
 
 })(this)
