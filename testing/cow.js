@@ -14,7 +14,6 @@
     },
     whispers: function(target) {
       if (!target)
-        // throw new Error('missing target');
         return console.error('missing target');
       console.log(this.name + ' whispers in ' + target + '\'s ear.');
     }
