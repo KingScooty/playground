@@ -2,9 +2,9 @@
   "name": "playground",
   "version": "0.0.1",
   "description": "Experimenting with shit, innit!",
-  "main": "index.js",
+  "main": "testing/cow.js",
   "scripts": {
-    "test": "testing/mocha.js"
+    "test": "./node_modules/.bin/testem"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.20.1",
-    "sinon": "^1.10.2"
+    "sinon": "^1.10.2",
+    "testem": "^0.6.16"
   }
 }
