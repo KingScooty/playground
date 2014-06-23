@@ -1,7 +1,0 @@
-{
-  "framework": "mocha+chai",
-  "src_files": [
-    "hello.js",
-    "hello.test.js"
-  ]
-}
