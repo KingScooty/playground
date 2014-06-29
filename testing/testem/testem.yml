@@ -56,4 +56,7 @@ launchers:
 
 launch_in_ci: [bs_chrome, bs_firefox bs_ie_8, bs_ie_9, bs_android_23, bs_android_41]
 
-launch_in_dev: [Node]
+launch_in_dev: 
+  - Node
+  - Chrome
+  - Firefox
