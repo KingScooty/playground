@@ -9,3 +9,13 @@ By doing this, you have solved the pass by reference issue with a new instance o
 To understand this clearly, the image below shows the flow of the `extendObj` function.
 
 ![Classical Inheritance](http://davidshariff.com/blog/images/classical_inheritance.png)
+
+## Functional
+
+As you can see by using this pattern, there is no need to use the prototype chain, constructors or the “new” keyword. Functional inheritance achieves this by passing a unique object around every time an instance of the function is called.
+
+This however, has a downside for performance because each object is unique, meaning each function call creates a new object, so the JavaScript interpreter has to assign new memory to the function in order to recompile everything inside of it as unique again.
+
+There are also benefits to this approach, as the closures of each function allow for good use of public and private methods / attributes. `functional2.js` shows a parent class of vehicle and children classes of `motorbike` and `boat`.
+
+You can see that it is fairly easy to provide encapsulation. The `_privateObj` can not be modified from outside of the object, unless exposed by a public method like increaseWheels(). Similarly, private values can also only be read when exposed by a public method, such as motorbike’s `totalNumWheels()` function.
