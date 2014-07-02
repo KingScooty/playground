@@ -1,0 +1,11 @@
+## Pseudoclassical
+
+Given the direct link between the `Male` and `Human` prototype, if Human has many children inheriting from it, any change on a child’s prototype properties will affect `Human`, and thus all children inheriting from `Human`. Changing a child’s prototype should not affect other children inheriting from the same parent. The reason for this is because JavaScript passes objects by reference, not by value, meaning all children of `Human` inherit changes occurred on other children’s prototypes.
+
+`childObj.prototype = parentObj.prototype` does give us inheritance. However, if you want to fix the issue above, you need to replace the `extendObj` function to take the child’s prototype and link it to a temporary object, whose prototype is the parent object’s prototype. In this way, by creating a temporary “middle” object, you allow the temporary object to be empty and inherit its properties from `Human`.
+
+By doing this, you have solved the pass by reference issue with a new instance of an empty object, which still inherits from the parent, but is not affected by other children.
+
+To understand this clearly, the image below shows the flow of the `extendObj` function.
+
+![Classical Inheritance](http://davidshariff.com/blog/images/classical_inheritance.png)
