@@ -1,9 +1,14 @@
 /**
- * Point a child's prototype to a parent's prototype
+ * Create a new constructor function, whose prototype is the parent
+ * object's prototype.
+ * Set the child's prototype to the newly created constructor function.
  */
 
 var extendObj = function(childObj, parentObj) {
-  childObj.prototype = parentObj.prototype;
+  var tmpObj = function () {}
+  tmpObj.prototype = parentObj.prototype;
+  childObj.prototype = new tmpObj();
+  childObj.prototype.constructor = childObj;
 };
 
 // base human object
